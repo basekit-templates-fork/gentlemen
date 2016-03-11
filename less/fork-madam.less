@@ -1,0 +1,559 @@
+// --------------------------------
+// Madam: CSS > Widgets
+// --------------------------------
+
+
+// #PAGE STYLES + HEADER
+// -------------------------------------------
+
+a {
+    color: @color-swatch4;
+}
+
+.template-content {
+    @media @tablet {
+        margin: 20px auto;
+    }
+}
+
+.logo-container.container {
+    max-width: 100%;
+    padding: 1% 2%;
+    border-bottom: 1px solid @color-swatch3;
+}
+
+.widget__logo {
+    margin-bottom: 10px;
+}
+
+.companyname {
+    margin: 0;
+}
+
+.header-companyname {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.page-content.container {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    @media @tablet {
+        padding: 0 5%;
+    }
+}
+
+
+// #NAVIGATION
+// -------------------------------------------
+
+.navigation-toggle {
+    margin-bottom: 0;
+}
+
+.navigation-toggle:before {
+    background-color: @color-swatch3;
+    box-shadow: 0 6px 0 @color-swatch3;
+}
+
+.navigation-toggle:after,
+.open .navigation-toggle:after,
+.open .navigation-toggle:before,
+.navigation-toggle:hover:after,
+.navigation-toggle:hover:before {
+    background-color: @color-swatch3;
+}
+
+.navigation-toggle:hover:before {
+    box-shadow: 0 6px 0 @color-swatch7;
+}
+
+.open .navigation-toggle:hover:before {
+    box-shadow: 0 6px 0 transparent;
+}
+
+.navigation-toggle:hover,
+.open .navigation-toggle {
+    background-color: transparent;
+}
+
+
+// #FEATURE
+// -------------------------------------------
+
+.feature__background-image {
+    height: 600px;
+    @media @mobile {
+        height: 400px;
+    }
+}
+
+.feature__content-inner-wrap {
+    padding: 60px 5% 60px 10%;
+    @media @tablet {
+        background-color: fade(@color-swatch1, 95%);
+        position: absolute;
+        width: 50.1%;
+        display: flex;
+        padding: 30px;
+    }
+    @media @mobile {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+}
+
+.feature-container {
+    margin-bottom: -8px;
+}
+
+.feature__button, 
+button, 
+.button,
+.blogpostlist__read-more { 
+    border-bottom: 5px solid @color__feature-button--background;
+    padding: 0;
+    background-color: transparent;
+    color: @color__feature-button--text;
+    padding-bottom: 10px;
+    letter-spacing: 0px;
+    font-family: @font__button--font-family;
+    &:hover {
+        border-bottom: 5px solid @color__feature-button--background--hover;
+        background-color: transparent;
+        color: @color__feature-button--text;
+    }
+}
+
+.feature__button {
+    @media @tablet {
+        margin: 0px auto;
+    }
+}
+
+
+// #HOMEPAGE SIGN UP
+// -------------------------------------------
+
+.homepage-signup {
+    background-color: @color-swatch3;
+    padding-bottom: 1px;
+    form, .form {
+        background-color: transparent;
+    }
+    .widget__signupform {
+        padding: 0px 10% 12px;
+    }
+    .signupform__button {
+        background-color: @color-swatch4;
+        color: @color-swatch1;
+        padding: 9px 15px;
+        border-bottom: 0;
+        &:hover {
+            background-color: lighten(@color-swatch4,10%);
+            border-bottom: 0;
+        }
+        @media @tablet {
+            background-color: @color-swatch4!important;
+        }
+    }
+    .signupform__label {
+        color: @color__feature-button--text;
+    }
+    .message-box {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+
+// #SOCIAL BAR
+// -------------------------------------------
+
+.social-bar {
+    // Flex child
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    text-align: right;
+    a, p, span {
+        font-family: @font__button--font-family;
+        font-size: @font__button--font-size;
+    }
+    @media @tablet {
+        display: block;
+        text-align: center;
+    }
+    @media @mobile {
+        text-align: center;
+    }
+    .socialicons__social-list {
+        text-align: right;
+        @media @tablet {
+            text-align: center;
+        }
+    }
+    .socialicons__social-item a:hover {
+        background-color: transparent;
+        border: 0;
+    }
+    .twitter__avatar {
+        display: none;
+    }
+    .social-social-link {
+        color: @color-swatch4;
+    }
+    .signupform__input {
+        background-color: #f7f7f7!important;
+    }
+    .signupform__button {
+        background-color: @color-swatch4!important;
+        color: white;
+        padding: 8px 10px;
+        border: 0;
+        &:hover {
+            background-color: lighten(@color-swatch4, 10%);
+        }
+    }
+    form, .form {
+        margin: 0px auto 0;
+    }
+}
+
+.socialicons__social-link:hover:before {
+    color: @color-swatch4;
+}
+
+.socialicons__social-link {
+    border: 1px solid @color-swatch7;
+}
+
+
+// #WIDGETS
+// -------------------------------------------
+
+.signupform__label, 
+.contactform__legend, 
+.blogsearch__legend {
+    font-family: @font__h2--font-family;
+    font-size: @font__h2--font-size;
+    font-weight: @font__h2--font-weight;
+    line-height: @font__h2--line-height;
+    letter-spacing: @font__h2--letter-spacing;
+}
+
+.gallery .gallery-item .image-title {
+    font-size: @font__h2--font-size;
+    font-weight: @font__h2--font-weight;
+}
+
+
+.slide-navigation .button {
+    background-color: fade(@color-swatch4, 20%)!important;
+    border: 0;
+}
+
+.responsiveslideshow__button:after {
+    display: none;
+}
+
+.responsiveslideshow__pagination-item .button {
+    width: 20px;
+    border-radius: 0;
+}
+
+.responsiveslideshow__previous-button:before,
+.slide-navigation .button:before,
+.responsiveslideshow__next-button:after {
+    background-color: transparent!important;
+}
+
+form:before, .form:before {
+    display: none;
+}
+
+.responsivecolumns .tweet-item {
+    padding: 0;
+}
+
+.widget__twitter,
+.tweet-list {
+    @media @tablet {
+        padding: 0;
+    }
+}
+
+.phone-number-link {
+    @media @mobile {
+        border-bottom: 0;
+    }
+}
+
+.clicktocall__phone-number-link:hover {
+    @media @mobile {
+        background-color: @color-swatch7!important;
+    }
+}
+
+
+// #TEMPLATE-FOOTER
+// -------------------------------------------
+
+.template-footer {
+    .signupform__button {
+        padding: 8px 10px;
+        background-color: @color-swatch4!important;
+        color: white;
+        border: 0;
+        &:hover {
+            background-color: lighten(@color-swatch4, 10%);
+        }
+    }
+    p, a, span {
+        font-family: @font__button--font-family;
+    }
+    .signupform__fieldset {
+        padding: 10px 10px 10px 0;
+    }
+}
+
+.template-footer .signupform .form .input {
+    background-color: #F7F7F7!important;
+}
+
+.template-footer .signupform .form-group:first-child .input {
+    min-width: 200px;
+}
+
+.template-footer .signupform__form-group:nth-child(1) {
+    padding-top: 10px;
+}
+
+
+// #BLOG
+// -------------------------------------------
+
+.blogpostlist__post-excerpt {
+    margin: 0;
+}
+
+.blogpostlist__read-more {
+    padding-bottom: 15px;
+}
+
+
+// #ECOMMERCE
+// -------------------------------------------
+
+.ecomproductslist__button {
+    padding: 4px 15px;
+    border-bottom: 5px solid #e6e6e6;
+}
+
+.responsivecolumns {
+    .columns-four-first, 
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        .ecomproductslist__select {
+            font-size: 9px;
+        }
+    }
+}
+
+.button--quantity {
+    background-color: @color-swatch4;
+    border: 0;
+    color: white;
+    &:hover {
+        background-color: lighten(@color-swatch4,10%);
+        border: 0;
+        color: white;
+    }
+}
+
+
+// #SOCIAL BAR
+// -------------------------------------------
+
+// Style for Signup Form in Header and Footer
+.social-bar .signupform .form,
+.homepage-signup .signupform .form,
+.template-footer .signupform .form {
+    border: none;
+    .label {
+        font-family: @font__button--font-family;
+        font-size: @font__button--font-size;
+        font-weight: @font__h3--font-weight;
+        line-height: 20px;
+        letter-spacing: @font__h3--letter-spacing;
+        margin: 0;
+        padding: 0;
+        // Remove label underline
+        &:after {
+            display: none;
+        }
+    }
+    .input {
+        height: 45px;
+        background-color: @color__body--background;
+        border: none;
+    }
+    .button {
+        @media @tablet {
+            background-color: @color-swatch4;
+            &:hover {
+                background-color: lighten(@color-swatch4, 10%);
+            }
+        }
+    }
+}
+
+// Add flexbox to signup form in Header and Footer
+.social-bar .signupform__form-body,
+.homepage-signup .signupform__form-body,
+.template-footer .signupform__form-body {
+
+    .flex(@display: flex);
+    .flex-wrap(@wrap: nowrap);
+    .justify-content(@justify: center);
+    .align-items(@align: flex-end);
+    .align-content(@align: stretch);
+
+    @media @mobile {
+        .flex-wrap(@wrap: wrap);
+        .form-group:last-child {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .form-group:first-child {
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        @media @mobile {
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100% !important;
+        }
+    }
+}
+
+// Nested flexbox in signup form for label and input
+.social-bar .signupform .form-group:first-child,
+.homepage-signup .signupform .form-group:first-child,
+.template-footer .signupform .form-group:first-child {
+    .flex(@display: flex);
+    .flex-wrap(@wrap: wrap);
+    .justify-content(@justify: flex-end);
+    .align-items(@align: flex-end);
+    .align-content(@align: stretch);
+
+    .label {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin-bottom: 12px;
+        line-height: 20px;
+    }
+    .input {
+        -webkit-flex: 1 1 30%;
+        -ms-flex: 1 1 30%;
+        flex: 1 1 30%;
+        min-width: 200px;
+        margin-bottom: 0;
+        margin-left: 10px;
+        @media @mobile {
+            min-width: inherit;
+            margin-left: 0;
+            text-align: center;
+            -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+        }
+    }
+}
+
+
+
+
+// -------------------------------------------
+// 2. #FLEXBOX MIXINS
+// -------------------------------------------
+
+.flex(@display: flex) {
+    display: ~"-webkit-@{display}";
+    display: ~"-moz-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+     -moz-flex-direction: @direction;
+      -ms-flex-direction: @direction;
+          flex-direction: @direction;
+}
+.flex-wrap(@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+     -moz-flex-wrap: @wrap;
+      -ms-flex-wrap: @wrap;
+          flex-wrap: @wrap;
+}
+.justify-content(@justify: flex-start) {
+  -webkit-justify-content: @justify;
+     -moz-justify-content: @justify;
+      -ms-justify-content: @justify;
+          justify-content: @justify;
+}
+.align-items(@align: stretch) {
+  -webkit-align-items: @align;
+     -moz-align-items: @align;
+      -ms-align-items: @align;
+          align-items: @align;
+}
+.align-content(@align: stretch) {
+  -webkit-align-content: @align;
+     -moz-align-content: @align;
+      -ms-align-content: @align;
+          align-content: @align;
+}
+.align-self(@align: auto) {
+  -webkit-align-self: @align;
+     -moz-align-self: @align;
+      -ms-align-self: @align;
+          align-self: @align;
+}
+.flex-order(@order: 0) {
+  -webkit-order: @order;
+     -moz-order: @order;
+      -ms-order: @order;
+          order: @order;
+}
+
