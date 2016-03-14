@@ -44,8 +44,15 @@
     background-color: @color__navigation--background;
     border: 0;
     @media @tablet {
-        background-color: lighten(@color__navigation--background, 5%)
+        background-color: lighten(@color__navigation--background, 10%);
     }
+}
+
+.navigation-item.open .navigation-list--children {
+    @media @tablet {
+        background-color: lighten(@color__navigation--background, 15%);
+    }
+
 }
 
 .feature__content-wrap {
