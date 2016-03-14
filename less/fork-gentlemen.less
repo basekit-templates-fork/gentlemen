@@ -69,7 +69,7 @@
     position: absolute;
     width: 50.1%;
     display: flex;
-    padding: 60px 4% 60px 8%;
+    padding: 60px 4% 60px 4%;
     @media @tablet {
         width: 100%;
     }
@@ -94,6 +94,16 @@
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.4);
         line-height: bkscale(@font-swatch8-line-height,0.5);
+    }
+}
+
+.feature__button {
+    margin: 10px auto 0;
+    background-color: @color__feature-button--background!important;
+    color: @color__feature-button--text!important;
+    &:hover {
+        background-color: @color__feature-button--background--hover!important;
+        color: @color__feature-button--text!important;
     }
 }
 
@@ -135,10 +145,10 @@ button,
 .contactform__legend, 
 .blogsearch__legend {
     font-family: @font__h3--font-family;
-    font-size: @font__h3--font-size;
-    font-weight: @font__h3--font-weight;
-    line-height: @font__h3--line-height;
-    letter-spacing: @font__h3--letter-spacing;
+    font-size: @font__h2--font-size;
+    font-weight: @font__h2--font-weight;
+    line-height: @font__h2--line-height;
+    letter-spacing: @font__h2--letter-spacing;
 }
 
 .ecomproductslist__button {
