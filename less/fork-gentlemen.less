@@ -2,6 +2,18 @@
 // Gentlemen: CSS > Widgets
 // --------------------------------
 
+.bk-pt-default .logo-header {
+    background-color: @color__footer--background;
+    position: relative;
+}
+
+.bk-pt-default .logo-container.container {
+    @media @mobile {
+        padding: 2% 2%;
+    }
+}
+
+
 .homepage-signup {
     background-color: @color__navigation--background;
     @media @tablet {
@@ -69,7 +81,7 @@
     position: absolute;
     width: 50.1%;
     display: flex;
-    padding: 60px 4% 60px 4%;
+    padding: 60px 2% 60px 2%;
     @media @tablet {
         width: 100%;
     }
@@ -91,6 +103,7 @@
 }
 
 .feature__headline {
+    text-transform: uppercase;
     @media @mobile {
         font-size: bkscale(@font-swatch8-font-size,0.4);
         line-height: bkscale(@font-swatch8-line-height,0.5);
