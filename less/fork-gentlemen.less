@@ -43,6 +43,9 @@
 .extendednavigation__navigation-list {
     background-color: @color__navigation--background;
     border: 0;
+    @media @tablet {
+        background-color: lighten(@color__navigation--background, 5%)
+    }
 }
 
 .feature__content-wrap {
@@ -72,15 +75,18 @@
 
 .feature__background-image {
     width: 100%;
-    @media @mobile {
+    @media @tablet {
         height: 700px;
+    }
+    @media @mobile {
+        height: 550px;
     }
 }
 
 .feature__headline {
     @media @mobile {
-        font-size: bkscale(@font-swatch8-font-size,0.5);
-        line-height: bkscale(@font-swatch8-line-height,0.6);
+        font-size: bkscale(@font-swatch8-font-size,0.4);
+        line-height: bkscale(@font-swatch8-line-height,0.5);
     }
 }
 
@@ -90,11 +96,14 @@
     background-color: transparent;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 99999;
 }
 
 .logo-container.container {
     border-bottom: 0;
+    @media @mobile {
+        padding: 1% 3%;
+    }
 }
 
 .feature__button, 
@@ -113,6 +122,16 @@ button,
         background-color: @color__button--background--hover;
         color: @color__button--text--hover;
     }
+}
+
+.signupform__label, 
+.contactform__legend, 
+.blogsearch__legend {
+    font-family: @font__h3--font-family;
+    font-size: @font__h3--font-size;
+    font-weight: @font__h3--font-weight;
+    line-height: @font__h3--line-height;
+    letter-spacing: @font__h3--letter-spacing;
 }
 
 .ecomproductslist__button {
