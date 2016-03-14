@@ -1,7 +1,7 @@
 {
-    "name":"Madam",
-    "thumbnail":"madam.png",
-    "screenshot":"madam-screenshot.jpg",
+    "name":"Gentlemen",
+    "thumbnail":"thumbnail.png",
+    "screenshot":"gentlemen-screenshot.jpg",
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
