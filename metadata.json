@@ -222,7 +222,7 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"       
         },
         "feature": {
-            "color__feature-content--background": "fade(@color-swatch3,70%)",
+            "color__feature-content--background": "color-swatch3",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
             "color__feature-button--text": "@color-swatch4",
