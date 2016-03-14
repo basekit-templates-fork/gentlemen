@@ -1,0 +1,121 @@
+// --------------------------------
+// Madam: CSS > Widgets
+// --------------------------------
+
+.homepage-signup {
+    background-color: @color__navigation--background;
+    @media @tablet {
+        padding: 0;
+    }
+}
+
+.header-logo,
+.header-companyname {
+    display: block;
+    flex: none;
+}
+
+.navigation-list {
+    padding: 10px;
+}
+
+.navigation-toggle:before {
+    background-color: @color-swatch1;
+    box-shadow: 0 6px 0 @color-swatch1;
+}
+
+.navigation-toggle:after,
+.open .navigation-toggle:after,
+.open .navigation-toggle:before,
+.navigation-toggle:hover:after,
+.navigation-toggle:hover:before {
+    background-color: @color-swatch1;
+}
+
+.navigation-toggle:hover:before {
+    box-shadow: 0 6px 0 @color-swatch1;
+}
+
+.item-name--parent:after {
+    border-top-color: @font-swatch6-color;
+}
+
+.extendednavigation__navigation-list {
+    background-color: @color__navigation--background;
+    border: 0;
+}
+
+.feature__content-wrap {
+    max-width: 100%;
+    background-color: fade(@color__feature-content--background,10%);
+}
+
+.feature__background-image {
+    height: 800px;
+}
+
+.feature__content-inner-wrap {
+    background-color: @color__feature-content--background;
+    position: absolute;
+    width: 50.1%;
+    display: flex;
+    padding: 60px 4% 60px 8%;
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+.feature__headline,
+.feature__strapline {
+    text-align: center;
+}
+
+.feature__background-image {
+    width: 100%;
+    @media @mobile {
+        height: 700px;
+    }
+}
+
+.feature__headline {
+    @media @mobile {
+        font-size: bkscale(@font-swatch8-font-size,0.5);
+        line-height: bkscale(@font-swatch8-line-height,0.6);
+    }
+}
+
+.logo-header {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.logo-container.container {
+    border-bottom: 0;
+}
+
+.feature__button, 
+button, 
+.button,
+.blogpostlist__read-more { 
+    border-bottom: 0;
+    padding: 8px 15px;
+    padding-bottom: 10px;
+    letter-spacing: 0px;
+    font-family: @font__button--font-family;
+    background-color: @color__button--background;
+    color: @color__button--text;
+    &:hover {
+        border-bottom: 0;
+        background-color: @color__button--background--hover;
+        color: @color__button--text--hover;
+    }
+}
+
+.ecomproductslist__button {
+    padding-bottom: 0;
+    padding: 4px 15px;
+}

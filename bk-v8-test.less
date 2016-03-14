@@ -43,9 +43,9 @@
 @font__p--line-height:@font-swatch5-line-height;
 @font__p--letter-spacing:@font-swatch5-letter-spacing;
 
-@color__button--background:transparent;
-@color__button--background--hover:darken(@color-swatch3,5%);
-@color__button--text:black;
+@color__button--background:@color-swatch3;
+@color__button--background--hover:lighten(@color-swatch3,10%);
+@color__button--text:@font-swatch7-color;
 @color__button--text--hover:@font-swatch7-color;
 @font__button--font-family:@font-swatch7-font-family;
 @font__button--font-size:@font-swatch7-font-size;
@@ -57,6 +57,7 @@
 
 @color__footer--background:@color-swatch3;
 
+@color__navigation--background: @color-swatch3;
 @color__navigation--text:@font-swatch6-color;
 @color__navigation--text--hover:@font-swatch6-color;
 @color__navigation--text--selected:@font-swatch6-color;
@@ -66,7 +67,7 @@
 @font__navigation--line-height:@font-swatch6-line-height;
 @font__navigation--letter-spacing:@font-swatch6-letter-spacing;
 
-@color__feature-content--background:transparent;
+@color__feature-content--background:fade(@color-swatch3,70%);
 @color__feature-headline--text:@font-swatch8-color;
 @color__feature-strapline--text:@font-swatch9-color;
 @color__feature-button--text:black;
