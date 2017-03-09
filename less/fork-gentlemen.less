@@ -104,7 +104,7 @@
 }
 
 .feature__content-inner-wrap {
-    background-color: @color__feature-content--background;
+    background-color: fade(@color__feature-content--background, 0.65);
     position: absolute;
     width: 50.1%;
     display: flex;
@@ -149,10 +149,10 @@
     }
 }
 
-.feature__button, 
-button, 
+.feature__button,
+button,
 .button,
-.blogpostlist__read-more { 
+.blogpostlist__read-more {
     border-bottom: 0;
     padding: 8px 15px;
     padding-bottom: 10px;
@@ -183,8 +183,8 @@ button,
     }
 }
 
-.signupform__legend, 
-.contactform__legend, 
+.signupform__legend,
+.contactform__legend,
 .blogsearch__legend {
     font-family: @font__h3--font-family;
     font-size: @font__h2--font-size;
@@ -224,7 +224,7 @@ button,
 .summary-table .cell {
     @media @tablet {
         width: 100%;
-    }   
+    }
 }
 
 .widget__ecomproduct {
